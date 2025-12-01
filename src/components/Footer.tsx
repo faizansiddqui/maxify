@@ -1,26 +1,17 @@
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 import maxifyLogo from "@/assets/maxify-logo.jpg";
 
 const footerLinks = {
   services: [
-    { name: "SEO Optimization", href: "#" },
-    { name: "Performance Marketing", href: "#" },
-    { name: "Social Media Marketing", href: "#" },
-    { name: "Brand Strategy", href: "#" },
-    { name: "Web Development", href: "#" },
+    { name: "SEO", href: "/services/seo" },
+    { name: "Web Development", href: "/services/web-development" },
+    { name: "Meta Ads", href: "/services/meta-ads" },
+    { name: "Google Ads", href: "/services/google-ads" },
   ],
   company: [
-    { name: "About Us", href: "#about" },
-    { name: "Our Team", href: "#" },
-    { name: "Careers", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Contact", href: "#contact" },
-  ],
-  resources: [
-    { name: "Case Studies", href: "#portfolio" },
-    { name: "Free Tools", href: "#" },
-    { name: "Newsletter", href: "#" },
-    { name: "Help Center", href: "#" },
+    { name: "About Us", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ],
 };
 
@@ -36,13 +27,13 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
+            <Link to="/" className="flex items-center gap-3 mb-4">
               <img src={maxifyLogo} alt="Maxify Global" className="h-10 w-auto rounded-lg" />
               <span className="text-xl font-heading font-bold">Maxify Global</span>
-            </div>
+            </Link>
             <p className="text-background/70 mb-6 max-w-sm">
               Empowering businesses with innovative digital marketing solutions 
               that drive real growth and measurable results.
@@ -67,9 +58,9 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-background/70 hover:text-background transition-colors">
+                  <Link to={link.href} className="text-background/70 hover:text-background transition-colors">
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -81,23 +72,9 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-background/70 hover:text-background transition-colors">
+                  <Link to={link.href} className="text-background/70 hover:text-background transition-colors">
                     {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h4 className="font-heading font-semibold mb-4">Resources</h4>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.name}>
-                  <a href={link.href} className="text-background/70 hover:text-background transition-colors">
-                    {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -112,7 +89,6 @@ const Footer = () => {
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-background/60 hover:text-background transition-colors">Privacy Policy</a>
             <a href="#" className="text-background/60 hover:text-background transition-colors">Terms of Service</a>
-            <a href="#" className="text-background/60 hover:text-background transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>
