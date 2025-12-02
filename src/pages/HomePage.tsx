@@ -6,10 +6,14 @@ import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 // import Contact from "@/components/Contact";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import useRefreshOnRouteChange from "@/hooks/useRefreshOnRouteChange";
 
 const HomePage = () => {
+    // This will force the component to refresh when routes change
+    const refreshKey = useRefreshOnRouteChange();
+
     return (
-        <div className="min-h-screen bg-background">
+        <div key={refreshKey} className="min-h-screen bg-background">
             <Navbar />
             <Hero />
             <Services />

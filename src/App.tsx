@@ -16,6 +16,7 @@ import GMBListingPage from "./pages/services/GMBListingPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsOfServicePage from "./pages/TermsOfServicePage";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -25,20 +26,21 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/services/seo" element={<SEOPage />} />
-          <Route path="/services/web-development" element={<WebDevelopmentPage />} />
-          <Route path="/services/meta-ads" element={<MetaAdsPage />} />
-          <Route path="/services/google-ads" element={<GoogleAdsPage />} />
-          <Route path="/services/social-media-management" element={<SocialMediaManagementPage />} />
-          <Route path="/services/youtube-ads" element={<YouTubeAdsPage />} />
-          <Route path="/services/gmb-listing" element={<GMBListingPage />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<HomePage key="home" />} />
+          <Route path="/about" element={<AboutPage key="about" />} />
+          <Route path="/contact" element={<ContactPage key="contact" />} />
+          <Route path="/services/seo" element={<SEOPage key="seo" />} />
+          <Route path="/services/web-development" element={<WebDevelopmentPage key="web-development" />} />
+          <Route path="/services/meta-ads" element={<MetaAdsPage key="meta-ads" />} />
+          <Route path="/services/google-ads" element={<GoogleAdsPage key="google-ads" />} />
+          <Route path="/services/social-media-management" element={<SocialMediaManagementPage key="social-media" />} />
+          <Route path="/services/youtube-ads" element={<YouTubeAdsPage key="youtube-ads" />} />
+          <Route path="/services/gmb-listing" element={<GMBListingPage key="gmb-listing" />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage key="privacy-policy" />} />
+          <Route path="/terms-of-service" element={<TermsOfServicePage key="terms" />} />
+          <Route path="*" element={<NotFound key="not-found" />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import About from "@/components/About";
 import { CheckCircle2, Award, Users, Globe, TrendingUp } from "lucide-react";
 import { useEffect, useState } from "react";
+import useRefreshOnRouteChange from "@/hooks/useRefreshOnRouteChange";
 
 const stats = [
   { icon: Users, value: "500+", label: "Happy Clients" },
@@ -20,6 +21,8 @@ const team = [
 
 const AboutPage = () => {
   const [isMobile, setIsMobile] = useState(false);
+  // This will force the component to refresh when routes change
+  const refreshKey = useRefreshOnRouteChange();
 
   useEffect(() => {
     const checkMobile = () => {
@@ -35,7 +38,7 @@ const AboutPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div key={refreshKey} className="min-h-screen bg-background">
       <Navbar />
 
       {/* Hero Section */}
