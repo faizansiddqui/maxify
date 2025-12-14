@@ -36,7 +36,7 @@ const ContactPage = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-heading font-bold mt-2 mb-6">
-              Let's Start a <span className="gradient-text">Conversation</span>
+              Let's Start a <span className="text-primary">Conversation</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               Have a project in mind? We'd love to hear from you.
@@ -69,7 +69,7 @@ const ContactPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-5xl font-heading font-bold mt-2 mb-4">
-              Get In <span className="gradient-text">Touch</span>
+              Get In <span className="text-primary">Touch</span>
             </h2>
             <p className="text-muted-foreground">
               We're here to help you grow your business. Reach out to us through any of these channels.
@@ -78,7 +78,7 @@ const ContactPage = () => {
 
           <div className="max-w-2xl mx-auto">
             <div className={`p-8 rounded-2xl bg-card border border-border/50 transition-all duration-300 ${isMobile ? '' : 'hover:-translate-y-2 hover:shadow-xl'}`}>
-              <h3 className="text-2xl font-heading font-bold mb-4 gradient-text">{office.city}</h3>
+              <h3 className="text-2xl font-heading font-bold mb-4 text-primary">{office.city}</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
@@ -119,7 +119,7 @@ const ContactPage = () => {
       <section className="py-16 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
-            <div className="w-16 h-16 rounded-2xl gradient-bg flex items-center justify-center">
+            <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center">
               <Clock className="h-8 w-8 text-primary-foreground" />
             </div>
             <div>

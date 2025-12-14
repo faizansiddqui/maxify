@@ -38,7 +38,7 @@ const TermsOfServicePage = () => {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="text-center max-w-3xl mx-auto">
                         <h1 className="text-4xl md:text-6xl font-heading font-bold mt-2 mb-6">
-                            Terms of <span className="gradient-text">Service</span>
+                            Terms of <span className="text-primary">Service</span>
                         </h1>
                         <p className="text-lg text-muted-foreground">
                             Last Updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}

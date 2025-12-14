@@ -43,7 +43,7 @@ const WebDevelopmentPage = () => {
             <div>
               <Badge className="mb-4" variant="secondary">WEB SOLUTIONS</Badge>
               <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-                Web <span className="gradient-text">Development</span>
+                Web <span className="text-primary">Development</span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8">
                 Create stunning, high-converting websites that represent your brand and drive business growth.
@@ -52,7 +52,7 @@ const WebDevelopmentPage = () => {
               <div className="flex flex-wrap gap-4">
                 <Button
                   size="lg"
-                  className="gradient-bg hover:opacity-90 transition-all transform hover:scale-105"
+                  className="bg-primary hover:opacity-90 transition-all transform hover:scale-105"
                   onClick={handleWhatsAppRedirect}
                 >
                   Build Your Website
@@ -78,7 +78,7 @@ const WebDevelopmentPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Web Development <span className="gradient-text">Advantages</span>
+              Web Development <span className="text-primary">Advantages</span>
             </h2>
             <p className="text-muted-foreground">
               Modern websites that deliver exceptional user experiences and business results
@@ -89,7 +89,7 @@ const WebDevelopmentPage = () => {
             {benefits.map((benefit, index) => (
               <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-4">
                     <CheckCircle2 className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <CardTitle>{benefit}</CardTitle>
@@ -106,7 +106,7 @@ const WebDevelopmentPage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                Comprehensive <span className="gradient-text">Web Solutions</span>
+                Comprehensive <span className="text-primary">Web Solutions</span>
               </h2>
               <p className="text-muted-foreground mb-8">
                 Our development team creates custom websites and web applications that drive results.
@@ -122,7 +122,7 @@ const WebDevelopmentPage = () => {
                   { icon: BarChart3, title: "Analytics Integration", desc: "Built-in tracking to measure performance and user behavior" }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center flex-shrink-0 mt-1">
                       <feature.icon className="h-5 w-5 text-primary-foreground" />
                     </div>
                     <div>
@@ -151,13 +151,13 @@ const WebDevelopmentPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20">
+                <div className="mt-8 p-6 rounded-xl border border-primary/20 bg-card">
                   <h3 className="font-heading font-semibold mb-2">Ready to Launch Your Website?</h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     Let us create a stunning website that converts visitors into customers.
                   </p>
                   <Button
-                    className="w-full gradient-bg hover:opacity-90"
+                    className="w-full bg-primary hover:opacity-90"
                     onClick={handleWhatsAppRedirect}
                   >
                     Get Your Free Consultation

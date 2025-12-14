@@ -43,7 +43,7 @@ const GMBListingPage = () => {
                         <div>
                             <Badge className="mb-4" variant="secondary">LOCAL SEO</Badge>
                             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-                                Google My Business <span className="gradient-text">Optimization</span>
+                                Google My Business <span className="text-primary">Optimization</span>
                             </h1>
                             <p className="text-lg text-muted-foreground mb-8">
                                 Dominate local search results and attract more customers with our comprehensive
@@ -53,7 +53,7 @@ const GMBListingPage = () => {
                             <div className="flex flex-wrap gap-4">
                                 <Button
                                     size="lg"
-                                    className="gradient-bg hover:opacity-90 transition-all transform hover:scale-105"
+                                    className="bg-primary hover:opacity-90 transition-all transform hover:scale-105"
                                     onClick={handleWhatsAppRedirect}
                                 >
                                     Get Started Today
@@ -79,7 +79,7 @@ const GMBListingPage = () => {
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto mb-16">
                         <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                            Why Choose Our <span className="gradient-text">GMB Services</span>
+                            Why Choose Our <span className="text-primary">GMB Services</span>
                         </h2>
                         <p className="text-muted-foreground">
                             We help businesses maximize their local search presence with data-driven strategies
@@ -90,7 +90,7 @@ const GMBListingPage = () => {
                         {benefits.map((benefit, index) => (
                             <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm">
                                 <CardHeader>
-                                    <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center mb-4">
+                                    <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-4">
                                         <CheckCircle2 className="h-6 w-6 text-primary-foreground" />
                                     </div>
                                     <CardTitle>{benefit}</CardTitle>
@@ -107,7 +107,7 @@ const GMBListingPage = () => {
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                                Comprehensive <span className="gradient-text">GMB Management</span>
+                                Comprehensive <span className="text-primary">GMB Management</span>
                             </h2>
                             <p className="text-muted-foreground mb-8">
                                 Our expert team handles every aspect of your Google My Business profile to ensure
@@ -124,7 +124,7 @@ const GMBListingPage = () => {
                                     { icon: Clock, title: "Regular Updates", desc: "Keep your business information current and accurate" }
                                 ].map((feature, index) => (
                                     <div key={index} className="flex items-start gap-4">
-                                        <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center flex-shrink-0 mt-1">
+                                        <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center flex-shrink-0 mt-1">
                                             <feature.icon className="h-5 w-5 text-primary-foreground" />
                                         </div>
                                         <div>
@@ -153,13 +153,13 @@ const GMBListingPage = () => {
                                     </div>
                                 </div>
 
-                                <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20">
+                                <div className="mt-8 p-6 rounded-xl border border-primary/20 bg-card">
                                     <h3 className="font-heading font-semibold mb-2">Ready to Dominate Local Search?</h3>
                                     <p className="text-sm text-muted-foreground mb-4">
                                         Let us optimize your Google My Business listing to attract more local customers.
                                     </p>
                                     <Button
-                                        className="w-full gradient-bg hover:opacity-90"
+                                        className="w-full bg-primary hover:opacity-90"
                                         onClick={handleWhatsAppRedirect}
                                     >
                                         Get Your Free Audit

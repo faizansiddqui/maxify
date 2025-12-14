@@ -46,7 +46,7 @@ const Hero = () => {
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             Elevate Your Brand with{" "}
-            <span className="gradient-text">Strategic Digital</span>{" "}
+            <span className="text-primary">Strategic Digital</span>{" "}
             Marketing
           </h1>
 
@@ -76,7 +76,7 @@ const Hero = () => {
               { value: "10+", label: "Years Experience" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl md:text-4xl font-heading font-bold gradient-text">{stat.value}</div>
+                <div className="text-3xl md:text-4xl font-heading font-bold text-primary">{stat.value}</div>
                 <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
               </div>
             ))}

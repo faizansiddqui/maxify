@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3">
             <img src={maxifyLogo} alt="Maxify Global" className="h-12 w-auto rounded-lg" />
-            <span className="text-xl font-heading font-bold gradient-text">Maxify Global</span>
+            <span className="text-xl font-heading font-bold text-primary">Maxify Global</span>
           </Link>
 
           {/* Desktop Navigation */}

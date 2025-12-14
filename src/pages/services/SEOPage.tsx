@@ -43,7 +43,7 @@ const SEOPage = () => {
             <div>
               <Badge className="mb-4" variant="secondary">ORGANIC TRAFFIC</Badge>
               <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-                SEO <span className="gradient-text">Optimization</span>
+                SEO <span className="text-primary">Optimization</span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8">
                 Boost your search engine rankings and drive organic traffic with our comprehensive
@@ -52,7 +52,7 @@ const SEOPage = () => {
               <div className="flex flex-wrap gap-4">
                 <Button
                   size="lg"
-                  className="gradient-bg hover:opacity-90 transition-all transform hover:scale-105"
+                  className="bg-primary hover:opacity-90 transition-all transform hover:scale-105"
                   onClick={handleWhatsAppRedirect}
                 >
                   Get Free SEO Audit
@@ -78,7 +78,7 @@ const SEOPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Benefits of <span className="gradient-text">Professional SEO</span>
+              Benefits of <span className="text-primary">Professional SEO</span>
             </h2>
             <p className="text-muted-foreground">
               Long-term growth through sustainable search engine optimization strategies
@@ -89,7 +89,7 @@ const SEOPage = () => {
             {benefits.map((benefit, index) => (
               <Card key={index} className="border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-4">
                     <CheckCircle2 className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <CardTitle>{benefit}</CardTitle>
@@ -106,7 +106,7 @@ const SEOPage = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                Comprehensive <span className="gradient-text">SEO Services</span>
+                Comprehensive <span className="text-primary">SEO Services</span>
               </h2>
               <p className="text-muted-foreground mb-8">
                 Our SEO experts implement white-hat techniques to improve your search rankings sustainably.
@@ -122,7 +122,7 @@ const SEOPage = () => {
                   { icon: Smartphone, title: "Technical SEO", desc: "Optimize site speed, mobile-friendliness, and crawlability" }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center flex-shrink-0 mt-1">
                       <feature.icon className="h-5 w-5 text-primary-foreground" />
                     </div>
                     <div>
@@ -151,13 +151,13 @@ const SEOPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20">
+                <div className="mt-8 p-6 rounded-xl border border-primary/20 bg-card">
                   <h3 className="font-heading font-semibold mb-2">Ready to Rank Higher?</h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     Let us audit your website and create a custom SEO strategy.
                   </p>
                   <Button
-                    className="w-full gradient-bg hover:opacity-90"
+                    className="w-full bg-primary hover:opacity-90"
                     onClick={handleWhatsAppRedirect}
                   >
                     Get Your Free SEO Audit

@@ -113,12 +113,13 @@
 
 @layer utilities {
   .gradient-text {
-    @apply bg-clip-text text-transparent;
-    background-image: var(--gradient-primary);
+    @apply text-primary;
+    /* Removed gradient and using single color */
   }
 
   .gradient-bg {
-    background-image: var(--gradient-primary);
+    @apply bg-primary;
+    /* Removed gradient and using single color */
   }
 
   .hover-lift {

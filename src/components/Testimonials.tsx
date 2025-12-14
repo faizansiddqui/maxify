@@ -111,7 +111,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-heading font-bold mt-2 mb-4">
-            Client <span className="gradient-text">Success Stories</span>
+            Client <span className="text-primary">Success Stories</span>
           </h2>
           <p className="text-muted-foreground">
             Real businesses, real results. See how Maxify Global has helped companies across industries achieve their marketing goals.
@@ -153,7 +153,7 @@ const Testimonials = () => {
                       {testimonial.image ? (
                         <AvatarImage src={testimonial.image} alt={testimonial.name} className="object-cover" />
                       ) : (
-                        <AvatarFallback className="gradient-bg text-primary-foreground font-semibold text-lg">
+                        <AvatarFallback className="bg-primary text-primary-foreground font-semibold text-lg">
                           {testimonial.name.split(' ').map(n => n[0]).join('')}
                         </AvatarFallback>
                       )}

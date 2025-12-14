@@ -52,7 +52,7 @@ const About = () => {
             {/* <span className="text-primary font-medium">About Us</span> */}
             <h2 className="text-3xl md:text-5xl font-heading font-bold mt-2 mb-6">
               Your Partner in{" "}
-              <span className="gradient-text">Digital Excellence</span>
+              <span className="text-primary">Digital Excellence</span>
             </h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               At Maxify Global, we're more than just a digital marketing agency.
@@ -75,7 +75,7 @@ const About = () => {
             </ul>
 
             <Link to="/about">
-              <Button className={`gradient-bg transition-all px-8 py-6 text-lg font-bold ${isMobile ? '' : 'hover:opacity-90 transform hover:scale-105 hover:shadow-xl'}`}>
+              <Button className={`bg-primary transition-all px-8 py-6 text-lg font-bold ${isMobile ? '' : 'hover:opacity-90 transform hover:scale-105 hover:shadow-xl'}`}>
                 Learn More About Us
               </Button>
             </Link>
@@ -93,11 +93,11 @@ const About = () => {
                   className={`bg-card border border-border/50 rounded-2xl p-4 text-center ${isMobile ? '' : 'hover:shadow-md transition-shadow'}`}
                 >
                   <div className="flex justify-center mb-2">
-                    <div className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
                       <stat.icon className="h-5 w-5 text-primary-foreground" />
                     </div>
                   </div>
-                  <div className="text-2xl font-heading font-bold gradient-text">{stat.value}</div>
+                  <div className="text-2xl font-heading font-bold text-primary">{stat.value}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
                 </div>
               ))}
@@ -105,27 +105,27 @@ const About = () => {
 
             {/* Values */}
             <div className="relative bg-card border border-border/50 rounded-3xl p-8 space-y-6">
-              <h3 className="text-2xl font-heading font-bold">Our Core Values</h3>
-
-              {values.map((value, index) => (
-                <div
-                  key={value.title}
-                  className={`flex items-start gap-4 p-4 rounded-xl ${isMobile ? '' : 'hover:bg-secondary/50 transition-colors'}`}
-                >
-                  <div className="w-12 h-12 rounded-xl gradient-bg flex items-center justify-center flex-shrink-0">
-                    <value.icon className="h-6 w-6 text-primary-foreground" />
+                <h3 className="text-2xl font-heading font-bold">Our Core Values</h3>
+      
+                {values.map((value, index) => (
+                  <div
+                    key={value.title}
+                    className={`flex items-start gap-4 p-4 rounded-xl ${isMobile ? '' : 'hover:bg-secondary/50 transition-colors'}`}
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
+                      <value.icon className="h-6 w-6 text-primary-foreground" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold font-heading">{value.title}</h4>
+                      <p className="text-sm text-muted-foreground">{value.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold font-heading">{value.title}</h4>
-                    <p className="text-sm text-muted-foreground">{value.description}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
 
               {/* Achievement Badge */}
               <div className="mt-8 p-6 rounded-2xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20">
                 <div className="flex items-center gap-4">
-                  <div className="text-4xl font-heading font-bold gradient-text">10+</div>
+                  <div className="text-4xl font-heading font-bold text-primary">10+</div>
                   <div>
                     <div className="font-semibold">Years of Excellence</div>
                     <div className="text-sm text-muted-foreground">Delivering digital success</div>

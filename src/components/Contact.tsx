@@ -38,7 +38,7 @@ const Contact = () => {
           <div className="text-center mb-16">
             <span className="text-primary font-medium">Get In Touch</span>
             <h2 className="text-3xl md:text-5xl font-heading font-bold mt-2 mb-6">
-              Let's Create <span className="gradient-text">Something Great</span>
+              Let's Create <span className="text-primary">Something Great</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Ready to take your digital presence to the next level? We'd love to hear
@@ -52,7 +52,7 @@ const Contact = () => {
               <div className="grid md:grid-cols-3 gap-8">
                 {/* Single Office Location */}
                 <div className="text-center">
-                  <div className="w-16 h-16 rounded-xl gradient-bg flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4">
                     <MapPin className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-semibold mb-2">Our Office</h3>
@@ -64,7 +64,7 @@ const Contact = () => {
 
                 {/* Phone */}
                 <div className="text-center">
-                  <div className="w-16 h-16 rounded-xl gradient-bg flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4">
                     <Phone className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-semibold mb-2">Call Us</h3>
@@ -73,7 +73,7 @@ const Contact = () => {
 
                 {/* Email */}
                 <div className="text-center">
-                  <div className="w-16 h-16 rounded-xl gradient-bg flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-xl bg-primary flex items-center justify-center mx-auto mb-4">
                     <Mail className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <h3 className="font-heading font-semibold mb-2">Email Us</h3>
@@ -91,7 +91,7 @@ const Contact = () => {
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <Button
                     size="lg"
-                    className={`gradient-bg transition-all group px-8 py-6 text-lg font-bold ${isMobile ? '' : 'hover:opacity-90 transform hover:scale-105 hover:shadow-xl'}`}
+                    className={`bg-primary transition-all group px-8 py-6 text-lg font-bold ${isMobile ? '' : 'hover:opacity-90 transform hover:scale-105 hover:shadow-xl'}`}
                     onClick={handleWhatsAppRedirect}
                   >
                     Start Conversation on WhatsApp

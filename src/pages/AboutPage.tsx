@@ -48,7 +48,7 @@ const AboutPage = () => {
           <div className="text-center max-w-3xl mx-auto">
             {/* <span className="text-primary font-medium">About Us</span> */}
             <h1 className="text-4xl md:text-6xl font-heading font-bold mt-2 mb-6">
-              We're <span className="gradient-text">Maxify Global</span>
+              We're <span className="text-primary">Maxify Global</span>
             </h1>
             <p className="text-lg text-muted-foreground">
               A team of passionate digital marketers dedicated to helping businesses
@@ -64,10 +64,10 @@ const AboutPage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="w-16 h-16 mx-auto rounded-2xl gradient-bg flex items-center justify-center mb-4">
+                <div className="w-16 h-16 mx-auto rounded-2xl bg-primary flex items-center justify-center mb-4">
                   <stat.icon className="h-8 w-8 text-primary-foreground" />
                 </div>
-                <div className="text-3xl md:text-4xl font-heading font-bold gradient-text">{stat.value}</div>
+                <div className="text-3xl md:text-4xl font-heading font-bold text-primary">{stat.value}</div>
                 <div className="text-muted-foreground mt-1">{stat.label}</div>
               </div>
             ))}
@@ -78,39 +78,6 @@ const AboutPage = () => {
       {/* About Component */}
       <About />
 
-      {/* Team Section */}
-      <section className="py-24 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-primary font-medium">Our Team</span>
-            <h2 className="text-3xl md:text-5xl font-heading font-bold mt-2 mb-4">
-              Meet the <span className="gradient-text">Experts</span>
-            </h2>
-            <p className="text-muted-foreground">
-              Our talented team brings together years of experience in digital marketing,
-              technology, and creative strategy.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member) => (
-              <div key={member.name} className="text-center group">
-                <div className="relative mb-4 overflow-hidden rounded-2xl">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className={`w-full aspect-square object-cover transition-transform duration-500 ${isMobile ? '' : 'group-hover:scale-110'}`}
-                  />
-                  <div className={`absolute inset-0 gradient-bg transition-opacity ${isMobile ? 'opacity-0' : 'opacity-0 group-hover:opacity-20'}`} />
-                </div>
-                <h3 className="font-heading font-semibold text-lg">{member.name}</h3>
-                <p className="text-muted-foreground">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Mission Section */}
       <section className="py-24">
         <div className="container mx-auto px-4">
@@ -118,7 +85,7 @@ const AboutPage = () => {
             <div>
               <span className="text-primary font-medium">Our Mission</span>
               <h2 className="text-3xl md:text-5xl font-heading font-bold mt-2 mb-6">
-                Driving Digital <span className="gradient-text">Success</span>
+                Driving Digital <span className="text-primary">Success</span>
               </h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 At Maxify Global, our mission is to empower businesses of all sizes to achieve
@@ -140,7 +107,7 @@ const AboutPage = () => {
               </ul>
             </div>
             <div className="relative">
-              <div className="absolute inset-0 gradient-bg opacity-10 rounded-3xl blur-3xl" />
+              <div className="absolute inset-0 bg-primary opacity-10 rounded-3xl blur-3xl" />
               <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
                 alt="Team collaboration"

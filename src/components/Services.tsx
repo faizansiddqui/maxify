@@ -78,7 +78,7 @@ const Services = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
           {/* <span className="text-primary font-medium">Our Services</span> */}
           <h2 className="text-3xl md:text-5xl font-heading font-bold mt-2 mb-4">
-            Solutions That <span className="gradient-text">Drive Growth</span>
+            Solutions That <span className="text-primary">Drive Growth</span>
           </h2>
           <p className="text-muted-foreground">
             Comprehensive digital marketing services tailored to help your business
@@ -94,7 +94,7 @@ const Services = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-6 flex flex-col h-full">
-                  <div className={`w-14 h-14 rounded-xl gradient-bg flex items-center justify-center mb-4 ${isMobile ? '' : 'group-hover:animate-pulse-glow'}`}>
+                  <div className={`w-14 h-14 rounded-xl bg-primary flex items-center justify-center mb-4 ${isMobile ? '' : 'group-hover:animate-pulse-glow'}`}>
                     <service.icon className="h-7 w-7 text-primary-foreground" />
                   </div>
                   <h3 className={`text-lg font-heading font-semibold mb-2 ${isMobile ? '' : 'group-hover:text-primary'}`}>
