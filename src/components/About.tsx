@@ -83,7 +83,7 @@ const About = () => {
 
           {/* Right Content - Values and Stats */}
           <div className="relative">
-            <div className="absolute inset-0 gradient-bg opacity-10 rounded-3xl blur-3xl" />
+            <div className="absolute inset-0 bg-primary/10 rounded-3xl blur-3xl" />
 
             {/* Stats Grid */}
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -105,25 +105,25 @@ const About = () => {
 
             {/* Values */}
             <div className="relative bg-card border border-border/50 rounded-3xl p-8 space-y-6">
-                <h3 className="text-2xl font-heading font-bold">Our Core Values</h3>
-      
-                {values.map((value, index) => (
-                  <div
-                    key={value.title}
-                    className={`flex items-start gap-4 p-4 rounded-xl ${isMobile ? '' : 'hover:bg-secondary/50 transition-colors'}`}
-                  >
-                    <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
-                      <value.icon className="h-6 w-6 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold font-heading">{value.title}</h4>
-                      <p className="text-sm text-muted-foreground">{value.description}</p>
-                    </div>
+              <h3 className="text-2xl font-heading font-bold">Our Core Values</h3>
+
+              {values.map((value, index) => (
+                <div
+                  key={value.title}
+                  className={`flex items-start gap-4 p-4 rounded-xl ${isMobile ? '' : 'hover:bg-secondary/50 transition-colors'}`}
+                >
+                  <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
+                    <value.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
-                ))}
+                  <div>
+                    <h4 className="font-semibold font-heading">{value.title}</h4>
+                    <p className="text-sm text-muted-foreground">{value.description}</p>
+                  </div>
+                </div>
+              ))}
 
               {/* Achievement Badge */}
-              <div className="mt-8 p-6 rounded-2xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20">
+              <div className="mt-8 p-6 rounded-2xl border border-primary/20 bg-card">
                 <div className="flex items-center gap-4">
                   <div className="text-4xl font-heading font-bold text-primary">10+</div>
                   <div>

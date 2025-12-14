@@ -28,10 +28,8 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center pt-32 pb-5 relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center pt-32 pb-5 relative overflow-hidden sm: mt-1">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(263_70%_50%_/_0.15),_transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_hsl(320_80%_55%_/_0.1),_transparent_50%)]" />
       <div className="absolute inset-0 bg-secondary/30" />
 
       {/* Floating Orbs */}
