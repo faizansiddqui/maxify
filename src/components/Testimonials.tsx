@@ -127,11 +127,11 @@ const Testimonials = () => {
           `}</style>
 
           {/* Testimonials Grid */}
-          <div className={`flex gap-6 ${isMobile ? 'flex-col' : 'flex-row'} overflow-x-auto scrollbar-hide pb-4`} style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+          <div className="flex gap-6 flex-row overflow-x-auto scrollbar-hide pb-4" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
             {testimonials.map((testimonial) => (
               <Card
                 key={testimonial.id}
-                className={`border-border/50 bg-card/50 backdrop-blur-sm transition-all duration-300 flex-shrink-0 ${isMobile ? 'w-full' : 'md:w-96'}`}
+                className="border-border/50 bg-card/50 backdrop-blur-sm transition-all duration-300 flex-shrink-0 w-80 md:w-96"
               >
                 <CardContent className="p-6">
                   {/* Rating */}
