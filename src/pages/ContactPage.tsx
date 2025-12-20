@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const office = {
   city: "Indore",
-  address: "E 07 Shriram Chauraha Near Sarthak Atta Chakki, Kalindi Gold City Jakhiya, Shri Aurobindo, Indore 453555",
+  address: "Address : 129, Scheme No 55, Vijay Nagar, PU 4, SCHEME NO 54, Indore, Madhya Pradesh 452010",
   phone: "+91 73555 53093",
   email: "support@maxifyglobal.in",
 };

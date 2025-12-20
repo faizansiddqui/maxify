@@ -144,8 +144,7 @@ const PrivacyPolicyPage = () => {
                             <p>If you have questions or comments about this policy, you may email us at <a href="mailto:support@maxifyglobal.in">support@maxifyglobal.in</a> or by post to:</p>
                             <p>
                                 Maxify Global<br />
-                                E 07 Shriram Chauraha Near Sarthak Atta Chakki,<br />
-                                Kalindi Gold City Jakhiya, Shri Aurobindo Indore 453555
+                                129, Scheme No 55, Vijay Nagar, PU 4, SCHEME NO 54, Indore, Madhya Pradesh 452010
                             </p>
                         </div>
                     </div>

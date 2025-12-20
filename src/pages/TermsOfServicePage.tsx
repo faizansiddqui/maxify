@@ -129,8 +129,7 @@ const TermsOfServicePage = () => {
                             <p>If you have any questions about these Terms of Service, please contact us at:</p>
                             <p>
                                 Maxify Global<br />
-                                E 07 Shriram Chauraha Near Sarthak Atta Chakki,<br />
-                                Kalindi Gold City Jakhiya, Shri Aurobindo Indore 453555<br />
+                                129, Scheme No 55, Vijay Nagar, PU 4, SCHEME NO 54, Indore, Madhya Pradesh 452010<br />
                                 Email: <a href="mailto:support@maxifyglobal.in">support@maxifyglobal.in</a><br />
                                 Phone: +91 73555 53093
                             </p>

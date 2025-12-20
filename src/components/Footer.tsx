@@ -26,7 +26,7 @@ const socialLinks = [
 ];
 
 const contactInfo = [
-  { icon: MapPin, text: "E 07 Shriram Chauraha, Indore 453555" },
+  { icon: MapPin, text: "129, Scheme No 55, Vijay Nagar, PU 4, SCHEME NO 54, Indore, Madhya Pradesh 452010" },
   { icon: Phone, text: "+91 73555 53093" },
   { icon: Mail, text: "support@maxifyglobal.in" },
 ];
